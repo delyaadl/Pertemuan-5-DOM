@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>firstChild</title>
+    </head>
+    <body>
+        <ul id="menu">
+            <li class="first">Home</li>
+            <li>Product</li>
+            <li class="current">Customer Support</li>
+            <li>Careers</li>
+            <li>Investors</li>
+            <li>News</li>
+            <li class="last">About us</li>
+        </ul>
+        
+        <script>
+            let content = document.getElementById('menu');
+            let firstChild = content.firstChild.nodeName;
+            
+            console.log(firstChild);
+            console.log(content.firstElementChild);
+            console.log(content.lastElementChild);
+            
+            let children = content.childNodes;
+            console.log(children);
+            
+            let childrenx = content.children;
+            console.log(childrenx);
+        </script>
+    </body>
+</html>

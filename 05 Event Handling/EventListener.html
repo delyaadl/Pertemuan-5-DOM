@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Event</title>
+    </head>
+    <body>
+        <button type="button" id="tombol">Click Me</button>
+        
+        <script>
+            function buttonClick(){
+                alert('button di klik fungsi');
+            }
+            
+            // document.getElementById('tombol').addEventListener('click', buttonClick);
+            
+            document.getElementById('tombol').addEventListener('click', () =>{
+               alert('buttoon di klik fungsi'); 
+            });
+        </script>
+    </body>
+</html>
